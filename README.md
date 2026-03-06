@@ -136,3 +136,5 @@ tail -f logs/server.log
 - 密码使用 `PBKDF2-HMAC-SHA256` 存储（含随机盐与迭代次数）。
 - Token 为随机高熵字符串并持久化到 `auth_tokens` 表。
 - 生产环境请替换为正式证书、限制 CORS、增加限流与审计。
+
+test
