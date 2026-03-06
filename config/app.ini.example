@@ -1,0 +1,23 @@
+# Server
+server.host=0.0.0.0
+server.port=1818
+server.worker_threads=4
+server.epoll_max_events=128
+server.socket_backlog=256
+
+# TLS certificate and private key
+# Generate local cert by: ./scripts/gen_self_signed_cert.sh
+tls.cert_file=./cert/server.crt
+tls.key_file=./cert/server.key
+
+# MySQL
+db.host=127.0.0.1
+db.port=3306
+db.user=app_user
+db.password=app_pass
+db.database=app_db
+db.charset=utf8mb4
+
+# Auth
+auth.token_expire_seconds=7200
+auth.pbkdf2_iterations=120000
